@@ -33,15 +33,15 @@ jobs:
         #keymap: [ test, default, via ]
         keyboard: [ keyball44, keyball61 ]
         keymap: [ webkaz ]
-        include:
-          - keyboard: keyball46
-            keymap:   test_Left
-          - keyboard: keyball46
-            keymap:   test_Both
-          - keyboard: keyball46
-            keymap:   via_Left
-          - keyboard: keyball46
-            keymap:   via_Both
+        # include:
+        #  - keyboard: keyball46
+        #    keymap:   test_Left
+        #  - keyboard: keyball46
+        #    keymap:   test_Both
+        #  - keyboard: keyball46
+        #    keymap:   via_Left
+        #  - keyboard: keyball46
+        #    keymap:   via_Both
 
     name: Build ${{ matrix.keyboard }} w/ ${{ matrix.keymap }}
 
@@ -76,8 +76,8 @@ jobs:
 
     steps:
 
-    - uses: actions/download-artifact@v3
-      with: { name: keyball39-firmwares }
+    # - uses: actions/download-artifact@v3
+    #   with: { name: keyball39-firmwares }
 
     - uses: actions/download-artifact@v3
       with: { name: keyball44-firmwares }
@@ -85,11 +85,11 @@ jobs:
     - uses: actions/download-artifact@v3
       with: { name: keyball61-firmwares }
 
-    - uses: actions/download-artifact@v3
-      with: { name: keyball46-firmwares }
+    # - uses: actions/download-artifact@v3
+    #   with: { name: keyball46-firmwares }
 
-    - uses: actions/download-artifact@v3
-      with: { name: one47-firmwares }
+    # - uses: actions/download-artifact@v3
+    #   with: { name: one47-firmwares }
 
     - name: List size of firmwares
       run: |
