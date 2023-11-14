@@ -34,3 +34,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #endif
 
 #define TAP_CODE_DELAY 5
+
+// レイヤーを一つ増やす
+#define DYNAMIC_KEYMAP_LAYER_COUNT 5
+
+// #define KEYBALL_CPI_DEFAULT 500      // 光学センサーPMW3360DM の解像度 (CPI) の規定値
+// #define KEYBALL_SCROLL_DIV_DEFAULT 1 // スクロール速度の規定値
+
+// 容量削減
+#define NO_ACTION_ONESHOT
+#define NO_MUSIC_MODE
