@@ -67,17 +67,17 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 //POINTING_DEVICE_AUTO_MOUSE_ENABLEが有効の時は以下有効となる
 // #ifdef POINTING_DEVICE_AUTO_MOUSE_ENABLE
     // レイヤー３のみAuto mouse layerを無効にする
-    switch(get_highest_layer(remove_auto_mouse_layer(state, true))) {
-    case 3:
-        // Auto enable scroll mode when the highest layer is 3
-        // remove_auto_mouse_target must be called to adjust state *before* setting enable
-        state = remove_auto_mouse_layer(state, false);
-        set_auto_mouse_enable(false);
-        break;
-    default:
-        set_auto_mouse_enable(true);
-        break;
-    }
+    // switch(get_highest_layer(remove_auto_mouse_layer(state, true))) {
+    // case 3:
+    //     // Auto enable scroll mode when the highest layer is 3
+    //     // remove_auto_mouse_target must be called to adjust state *before* setting enable
+    //     state = remove_auto_mouse_layer(state, false);
+    //     set_auto_mouse_enable(false);
+    //     break;
+    // default:
+    //     set_auto_mouse_enable(true);
+    //     break;
+    // }
 // #endif
 
     return state;
