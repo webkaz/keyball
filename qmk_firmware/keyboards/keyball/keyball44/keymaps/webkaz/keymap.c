@@ -66,6 +66,7 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 
 //POINTING_DEVICE_AUTO_MOUSE_ENABLEが有効の時は以下有効となる
 #ifdef POINTING_DEVICE_AUTO_MOUSE_ENABLE
+#   include <string.h> /* memset */
     // レイヤー３のみAuto mouse layerを無効にする
     switch(get_highest_layer(remove_auto_mouse_layer(state, true))) {
     case 3:
