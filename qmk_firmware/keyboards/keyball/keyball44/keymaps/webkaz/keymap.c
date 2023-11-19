@@ -65,8 +65,7 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     keyball_set_scroll_mode(get_highest_layer(state) == 3);
 
 //POINTING_DEVICE_AUTO_MOUSE_ENABLEが有効の時は以下有効となる
-#ifdef POINTING_DEVICE_AUTO_MOUSE_ENABLE
-#   include <string.h> /* memset */
+// #ifdef POINTING_DEVICE_AUTO_MOUSE_ENABLE
     // レイヤー３のみAuto mouse layerを無効にする
     switch(get_highest_layer(remove_auto_mouse_layer(state, true))) {
     case 3:
@@ -79,7 +78,7 @@ layer_state_t layer_state_set_user(layer_state_t state) {
         set_auto_mouse_enable(true);
         break;
     }
-#endif
+// #endif
 
     return state;
 }
