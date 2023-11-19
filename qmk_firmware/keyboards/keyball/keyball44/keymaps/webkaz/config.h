@@ -46,5 +46,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define KEYBALL_SCROLL_DIV_DEFAULT 1 // スクロール速度の規定値
 
 // 容量削減
-// #define NO_ACTION_ONESHOT
+#define NO_ACTION_ONESHOT
 #define NO_MUSIC_MODE
