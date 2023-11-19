@@ -41,7 +41,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Automatic Mouse Layer
 #define POINTING_DEVICE_AUTO_MOUSE_ENABLE
 #define AUTO_MOUSE_DEFAULT_LAYER 4
-#define AUTO_MOUSE_TIME 250
+#define AUTO_MOUSE_TIME 500
 
 // #define KEYBALL_CPI_DEFAULT 500      // 光学センサーPMW3360DM の解像度 (CPI) の規定値
 // #define KEYBALL_SCROLL_DIV_DEFAULT 1 // スクロール速度の規定値
