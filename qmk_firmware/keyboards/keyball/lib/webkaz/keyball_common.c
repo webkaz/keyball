@@ -2,7 +2,9 @@
 #include QMK_KEYBOARD_H
 #include "quantum.h"
 
-__attribute__((weak)) layer_state_t auto_mouse_layer_state(layer_state_t state){
+#include "keyball_common.h"
+
+layer_state_t auto_mouse_layer_state(layer_state_t state){
 
 //POINTING_DEVICE_AUTO_MOUSE_ENABLEが有効の時は以下有効となる
 #ifdef POINTING_DEVICE_AUTO_MOUSE_ENABLE
