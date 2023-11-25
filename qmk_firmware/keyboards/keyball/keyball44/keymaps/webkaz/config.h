@@ -46,6 +46,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // 独自　スクロールレイヤ
 //#define SCROLL_LAYER 3
 
+// HOLD時間と判定する時間未満でレイヤーキー+キーが押されたら、HOLD扱いする
+#define HOLD_ON_OTHER_KEY_PRESS
+
 // #define KEYBALL_CPI_DEFAULT 500      // 光学センサーPMW3360DM の解像度 (CPI) の規定値
 // #define KEYBALL_SCROLL_DIV_DEFAULT 1 // スクロール速度の規定値
 
