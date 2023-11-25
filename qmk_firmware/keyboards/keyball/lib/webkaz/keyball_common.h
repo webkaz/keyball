@@ -1,5 +1,5 @@
 
-#pragma once
+//#pragma once
 
 // 独自 スクロールレイヤーの規定値
 #define SCROLL_LAYER 3
