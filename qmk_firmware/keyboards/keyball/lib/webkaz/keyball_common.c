@@ -2,6 +2,7 @@
 #include QMK_KEYBOARD_H
 #include "quantum.h"
 
+#include "keyball.h"
 #include "keyball_common.h"
 
 layer_state_t auto_mouse_layer_state(layer_state_t state){
