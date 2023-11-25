@@ -3,11 +3,14 @@
 
 #include "quantum.h"
 
+// 独自 スクロールレイヤーの規定値
+#define SCROLL_LAYER 3
+
 __attribute__((weak)) layer_state_t common_layer_state(layer_state_t state){
 
 //POINTING_DEVICE_AUTO_MOUSE_ENABLEが有効の時は以下有効となる
 #ifdef POINTING_DEVICE_AUTO_MOUSE_ENABLE
-    //レイヤー３のみAuto mouse layerを無効にするt
+    //レイヤー３のみAuto mouse layerを無効にする
     switch(get_highest_layer(remove_auto_mouse_layer(state, true))) {
         case SCROLL_LAYER:
             // Auto enable scroll mode when the highest layer is 3
