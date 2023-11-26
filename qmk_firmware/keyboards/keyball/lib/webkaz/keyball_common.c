@@ -2,10 +2,10 @@
 #include QMK_KEYBOARD_H
 #include "quantum.h"
 
-#include "lib/keyball/keyball.h"
+//#include "lib/keyball/keyball.h"
 #include "keyball_common.h"
 
-__attribute__((weak)) layer_state_t auto_mouse_layer_state(layer_state_t state){
+layer_state_t auto_mouse_layer_state(layer_state_t state){
 
 //POINTING_DEVICE_AUTO_MOUSE_ENABLEが有効の時は以下有効となる
 #ifdef POINTING_DEVICE_AUTO_MOUSE_ENABLE
@@ -30,7 +30,6 @@ __attribute__((weak)) layer_state_t auto_mouse_layer_state(layer_state_t state){
 
     return state;
 }
-
 
 // void webkaz_test_func(void){
 //     //keyball_set_scroll_mode(true);

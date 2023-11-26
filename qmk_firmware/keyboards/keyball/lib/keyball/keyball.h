@@ -17,8 +17,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-void webkaz_test_func(void);
-
 //////////////////////////////////////////////////////////////////////////////
 // Configurations
 
