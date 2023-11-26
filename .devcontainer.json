@@ -45,7 +45,8 @@
                 "llvm-vs-code-extensions.vscode-clangd",
                 "bierner.github-markdown-preview",
                 "donjayamanne.git-extension-pack",
-                "MS-CEINTL.vscode-language-pack-ja"
+                "MS-CEINTL.vscode-language-pack-ja",
+                "github.vscode-pull-request-github"
             ]
         }
     },
