@@ -51,7 +51,8 @@
                 "GitHub.copilot-chat",
                 "ms-vscode-remote.remote-containers",
                 "hediet.vscode-drawio",
-                "GitHub.vscode-github-actions"
+                "GitHub.vscode-github-actions",
+                "ms-vscode-remote.vscode-remote-extensionpack"
             ]
         }
     },
