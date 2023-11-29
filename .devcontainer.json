@@ -1,5 +1,12 @@
 {
     "image": "ghcr.io/qmk/qmk_cli:latest",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    },
+    "postCreateCommand": "apt update ;apt install -y software-properties-common apt-transport-https wget curl tar gnupg2 ;wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | apt-key add - ;add-apt-repository 'deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main' ;apt update ;apt install -y code ;",
+    "containerEnv": {
+        "TZ": "Asia/Tokyo"
+    },
     // Configure tool-specific properties.
     "customizations": {
         // Configure properties specific to VS Code.
@@ -57,3 +64,11 @@
         }
     },
 }
+/*
+apt update ;
+apt install -y software-properties-common apt-transport-https wget curl tar gnupg2 ;
+wget -q https: //packages.microsoft.com/keys/microsoft.asc -O- | apt-key add - ;
+add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" ;
+apt update ;
+apt install -y code ;
+*/
